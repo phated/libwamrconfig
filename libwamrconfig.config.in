@@ -1,0 +1,6 @@
+opam-version: "2.0"
+variables {
+    interpreter: %{libwamrconfig:interpreter != ""?libwamrconfig:interpreter:true}%
+    aot: %{libwamrconfig:aot?true:false}%
+    jit: %{libwamrconfig:jit?true:false}%
+}
